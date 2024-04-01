@@ -218,5 +218,5 @@ text-decoration: none;
 color: #000;
 }
 .nav-item:hover .product-select{
-  display: block;
+  display: block; 
 }
