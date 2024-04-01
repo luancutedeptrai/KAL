@@ -1,0 +1,191 @@
+
+#home {
+  margin-top: 45px;
+  /* background-image: url(../img/banner/anh1.png); */
+  /* background-color: aqua; */
+  color: #fff;
+  width: 100%;
+  height: 700px;
+  background-size: 100%;
+  background-position: center top -600px; /* Adjust the pixel value to lower the image */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Khoảng cách giữa nội dung và viền của phần banner */
+}
+
+#home h4 {
+  font-size: 1.5rem; /* Cỡ chữ cho tiêu đề nhỏ */
+  margin-bottom: 10px; /* Khoảng cách dưới cho tiêu đề */
+}
+
+#home h1 {
+  font-size: 3.5rem; /* Cỡ chữ cho tiêu đề lớn */
+  margin-bottom: 20px; /* Khoảng cách dưới cho tiêu đề */
+}
+
+.icon{
+  display: flex;
+  justify-content: space-around;
+}
+
+#brand{
+  margin-top: 40px;
+}
+
+.banner-img{
+  background-image: url(../img/banner/cogaidoinon.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: rgba(235, 240, 237, 0.35) 0 -25px 18px -14px inset,rgba(0, 0, 0, 0.25) 0 1px 2px,rgba(0, 0, 0, 0.25) 0 2px 4px,rgba(0, 0, 0, 0.25) 0 4px 8px,rgba(0, 0, 0, 0.25) 0 8px 16px,rgba(0, 0, 0, 0.25) 0 16px 32px;
+
+}
+.banner-img .content {
+  position: absolute;
+  bottom: 300px;
+  right: 400px;
+  color: #333333;
+  /* background: #FFFFFF; */
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+  color: #333333;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+
+.banner-img .button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  position: absolute;
+  bottom: 200px;
+  right: 600px;
+}
+
+.banner-img .button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.banner-img .button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.banner-img .button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#brand .img-fluid {
+  transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển động mượt mà */
+  margin-top: 50px;
+}
+
+#brand .img-fluid:hover {
+  transform: scale(1.1); /* Phóng to hình ảnh khi di chuột vào */
+}
+
+
+
+#new .custom-image {
+  width: 800px;
+  height: auto;
+}
+
+#new .content p{
+  font-size: 20px;
+}
+
+.title{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  font-weight: 600;
+}
+.title span{
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #2d2d2e;
+}
+#collection h2{
+  text-transform: uppercase;
+  color: black;
+}
+
+#collection .title hr{
+  width: 150px;
+  height:2px;
+  border-width:0;
+  color:rgb(0, 0, 0);
+  background-color:gray
+}
+#collection .card{
+  margin-top: 50px;
+  background-color: transparent;
+  color: black;
+  border: none !important;
+}
+#collection .card .card-body{
+  padding: 1px;
+}
+#collection .card span{
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #2d2d2e;
+} 
+
+.card-img-bottom:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: 0.3s linear;
+}
+
+.viewport {
+  overflow: hidden;
+  /* width: 1000px;  */
+  /* Kích thước của một sản phẩm */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s;
+}
+.card-title{
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 24px;
+}

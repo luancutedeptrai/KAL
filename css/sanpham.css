@@ -1,0 +1,190 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+  
+
+  /* @import */
+
+/* url('https://fonts.googleapis.com/css?family=Poppins: ital, wght@0,100;0,200;0, 300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1, 700;1,800;1,900&display=swap'); */
+
+:root{
+
+  --primary-color: rgb(16, 17, 16);/*khai biến cho mã màu*/
+}
+
+
+*{/*reset css, không sợ bị lỗi*/
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+.card-item {
+  margin: 40px auto;
+  width: 300px;
+  height: 400px;
+  /* background: rgb(94, 128, 128); */
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 4px #ccc;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  transition: 1s;
+
+}
+.card-item:hover{
+  transform: scale(1.1);
+}
+
+
+
+.card_heart,.card_cart {
+
+  font-size: 25px;
+
+  position: absolute;
+
+  left: 20px;
+
+  top: 15px;
+
+  cursor: pointer;
+
+}
+
+.card_cart {
+
+  left: unset;/*right hok ghi đè left được nên có thuộc tính únet*/
+  right: 20px;
+
+}
+
+.card_img{
+
+  width: 90%;
+  transition:0.5s;
+
+}
+
+
+
+.card_img img{
+
+  /* width: 100%; */
+  height: 220px;
+  object-fit: cover; /*ảnh to nhưng sẽ tự co vào*/
+  border-radius: 15px;
+  
+  }
+  
+.card_title, .card_price{
+  
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center; 
+  transition:0.5s;
+  
+}
+  
+.card_title{ 
+  color: var(--primary-color); 
+}
+  
+.card_size, .card_color{
+  display: flex;
+  align-items:center; 
+  margin-bottom: 10px;
+  
+}
+  
+.card_size span{ 
+  padding: 1px 10px; 
+  background: rgb(220, 211, 211); 
+  color:black; 
+  margin:0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  }
+  
+.card_color span{ 
+  width: 15px; 
+  height: 15px; 
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+
+}
+
+.card_color_green{ background:green; }
+
+.card_color_red{ background: red; }
+  
+.card_color_yellow{ background: rgb(202, 232, 9); }
+  
+.card_action button{
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  color:aliceblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition:0.25s;
+  cursor:pointer;
+      
+}
+      
+.card_action button:hover{ transform: scale(0.9); }
+      
+.card-item:hover .card_img{
+      
+}      
+.card-item:hover .card_title{
+      
+  /* transform: translate(-70px, -60px);  */
+}
+      
+.card-item:hover .card_price{
+
+  /* transform: translate(-70px, -60px);  */
+}
+      
+.card_size{ 
+  margin-top: 150px; 
+  visibility: hidden; 
+  opacity: 0;
+      
+      }
+      
+.card_size, .card_color, .card_action{ 
+  visibility: hidden; 
+  opacity:0; 
+  transition:0.5s; 
+  transition-delay: 0.4s; }
+
+  .card_price {
+    color: #c71818;
+  }
+.card_action{
+  transition: 0.8s;
+}
+.card-item:hover .card_size, 
+.card-item:hover .card_color, 
+.card-item:hover .card_action{
+   visibility:visible; 
+   opacity:160; }
+  
+      
+.card-item:hover .card_size{
+  margin-top: -30px
+} 

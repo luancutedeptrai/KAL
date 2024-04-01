@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.img-logo{
+    width: 200px;
+}
+/* https://www.youtube.com/embed/2kv3NcvnaDU?enablejsapi=1&controls=0&rel=0&showinfo=0&loop=1&playlist=2kv3NcvnaDU&playsinline=1 */
+#header {
+    position: fixed; 
+    width: 100%; /* Chiều rộng 100% */
+    height: 70px ;
+    z-index: 1000; /* Đảm bảo nó hiển thị trên mọi phần khác của trang */
+    top: 0; /* Đặt navbar ở phía trên cùng */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng viền nổi lên */
+    transition: all 0.4s ease-in-out;
+    font-weight: 650;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+#header.sticky{
+    /* background-color: #ffffffcf;
+    opacity: 0.9; */
+    color: #333;
+    height: 65px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 85%;
+}
+.navbar.menu {
+    background-color: rgba(31, 29, 29, 0.512); /* Adjust the opacity (0.0 to 1.0) as desired */
+  }
+.container-fluid{
+
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: #222222;
+}
+
+footer h5{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+}
+
+footer li a:hover{
+    color: #D8D8D8;
+}
+
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+
+body::-webkit-scrollbar{
+    width: 10px ;    
+}
+body::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to right bottom,#ffa400,#00aefd);
+    border-radius: 100rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: #ccc;
+    border-radius: 100rem;
+}
+
+.form-inline {
+position: relative; /* Để có thể căn chỉnh vị trí của biểu tượng search */
+}
+
+.search {
+    border: 1px solid #000;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+
+  /* Background transparency for .form-control */
+  .form-inline .form-control {
+    width: calc(100% - 40px); /* Độ rộng của input - chiều rộng của biểu tượng search */
+    background-color: rgba(255, 255, 255, 0.8); /* Màu nền với độ trong suốt nhẹ */
+    border: none; /* Loại bỏ viền của input */
+    padding-right: 35px; /* Khoảng cách phía bên phải để tránh chồng lấn với biểu tượng search */
+  }
+  
+  /* Hover effect for form control */
+  .form-inline .form-control:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Tăng độ trong suốt khi hover */
+  }
+
+.form-inline .fa-search {
+    position: absolute; /* Đặt vị trí tuyệt đối để căn chỉnh */
+    right: 10px; /* Khoảng cách từ biểu tượng search đến mép phải của input */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Dịch chuyển lên trên 50% để căn giữa theo chiều dọc */
+    cursor: pointer; /* Biểu tượng search có thể click được */
+    color: #333; /* Màu của biểu tượng */
+}
+/* Hover effect for search icon */
+.form-inline .fa-search:hover {
+    color: #555; /* Màu của biểu tượng khi hover */
+  }
+  

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sanpham.css">
+
+    <!-- <link rel="stylesheet" href="../css/trangchu.css"> -->
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js.map"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="../js/style.js"></script>
+
+  </head>
+  <body class="">
+    <!-- nav -->
+    <nav class="navbar menu navbar-expand-lg navbar-light" id="header">
+      <div class="container-fluid p-0">
+        <div class="row col-12">
+          <div class="col-4">
+            <a href="index.html"><img style="height: 55px;" class="img-logo" src="../img/logo.png" alt=""></a>
+          </div>
+  
+          <div class="col-4">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="trangchu.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="sanpham.html">Sản phẩm</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="lienhe.html">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="col-4 p-0">
+            <div class="row p-0 col-12 d-flex justify-content-end">
+              <form class="form-inline d-flex">
+                <input class="form-control w-100 search" type="search" placeholder="Search" aria-label="Search">
+              </form>
+              <div class="navbar-nav">
+                <a class="nav-link" href="#"><i class="fas fa-search fa-lg"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-user fa-lg"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <section class="product">
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">  
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/1a.jpeg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm body cắt xẻ táo bạo</h5>
+            <h4 class="p-price">495.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/2a.jpeg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm dài lửng rút nhúng</h5>
+            <h4 class="p-price">349.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+  
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/3a.jpeg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm chấm bi</h5>
+            <h4 class="p-price">349.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+  
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/4a.jpeg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm tơ nhúng tùng dây nơ cổ</h5>
+            <h4 class="p-price">439.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+  
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/50f2f836ddf43d910cfb0100faf5ad97_540x.jpg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm tiểu thư sang chảnh</h5>
+            <h4 class="p-price">369.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/6a.jpeg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm len 2 dây</h5>
+            <h4 class="p-price">239.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+  
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/7a.jpg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Đầm len ôm body</h5>
+            <h4 class="p-price">279.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+  
+        <div class="product-item text-center col-lg-3 col-md-4 col-12">
+            <div class="product-item-image-wrapper">
+              <a href="../html/chitietsp.html" style="display: block; height: 100%" >
+                <img class="product-item-image img-fluid " src="..../img/sanpham/81962fa3a47114d9eeb9944f51f62021_540x.jpeg" alt="">
+              </a>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Chân váy caro hồng</h5>
+            <h4 class="p-price">199.000 VNĐ</h4>
+            <button class="btn btn-outline-warning btncart cart-btn w-75" ><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        
+    </section> -->
+    
+    <section class="product container">
+<!-- sản phẩm 1 -->
+        <div class="card-item ">
+          <div class="card_heart">
+              <i class="bx bx-heart"></i>
+          </div>
+      
+          <div class="card_cart">
+              <i class="bx bx-cart-download"></i>
+          </div>
+          
+          <div class="card_img mx-auto">
+              <img width="100%" src="../img/sanpham/ombody1.jpg" alt="">
+          </div>
+          
+          <div class="card_title">
+              Chân Váy Sọc Caro HÀN QUỐC
+          </div>
+          
+          <div class="card_price"> 190.000VND</div>
+          
+          <!-- <div class="card_size"> 
+              
+              <h5>size</h5>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              
+          </div> -->
+          
+          <!-- <div class="card_color">
+          
+              <h5>color</h5>
+              
+              <span class="card_color_green"></span>
+              
+              <span class="card_color_red"></span>
+              
+              <span class="card_color_yellow"></span>
+          
+          </div> -->
+          
+          <div class="card_action">
+          
+              <a href="./chitietsp1.html"><button class="">MUA HÀNG </button></a>
+              
+              <!-- <button>THÊM GIỎ HÀNG</button> -->
+          
+          </div>
+          
+        </div>  
+  
+        <div class="card-item ">
+          <div class="card_heart">
+              <i class="bx bx-heart"></i>
+          </div>
+      
+          <div class="card_cart">
+              <i class="bx bx-cart-download"></i>
+          </div>
+          
+          <div class="card_img mx-auto">
+              <img width="100%" src="../img/sanpham/Đamhong2.jpeg" alt="">
+          </div>
+          
+          <div class="card_title">
+              Đầm Maxi Hồng 2 Dây Quyến Rũ
+          </div>
+          
+          <div class="card_price"> 390.000VND</div>
+          
+          <!-- <div class="card_size"> 
+              
+              <h5>size</h5>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              
+          </div>
+          
+          <div class="card_color">
+          
+              <h5>color</h5>
+              
+              <span class="card_color_green"></span>
+              
+              <span class="card_color_red"></span>
+              
+              <span class="card_color_yellow"></span>
+          
+          </div> -->
+          
+          <div class="card_action">
+          
+              <a href="./chiietsp2.html"><button>MUA HÀNG </button></a>
+              
+              <!-- <button>THÊM GIỎ HÀNG</button> -->
+          
+          </div>
+          
+        </div>  
+  
+        <div class="card-item ">
+          <div class="card_heart">
+              <i class="bx bx-heart"></i>
+          </div>
+      
+          <div class="card_cart">
+              <i class="bx bx-cart-download"></i>
+          </div>
+          
+          <div class="card_img mx-auto">
+              <img width="100%" src="../img/sanpham/vayjeand1.jpeg" alt="">
+          </div>
+          
+          <div class="card_title">
+              Đầm Jean Cá Tính
+          </div>
+          
+          <div class="card_price"> 439.000VND</div>
+          
+          <!-- <div class="card_size"> 
+              
+              <h5>size</h5>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              
+          </div>
+          
+          <div class="card_color">
+          
+              <h5>color</h5>
+              
+              <span class="card_color_green"></span>
+              
+              <span class="card_color_red"></span>
+              
+              <span class="card_color_yellow"></span>
+          
+          </div> -->
+          
+          <div class="card_action">
+          
+              <button>MUA HÀNG </button>
+              
+              <!-- <button>THÊM GIỎ HÀNG</button> -->
+          
+          </div>
+          
+        </div>  
+  
+        <div class="card-item ">
+          <div class="card_heart">
+              <i class="bx bx-heart"></i>
+          </div>
+      
+          <div class="card_cart">
+              <i class="bx bx-cart-download"></i>
+          </div>
+          
+          <div class="card_img mx-auto">
+              <img width="100%" src="../img/sanpham/2dayjean1.jpeg" alt="">
+          </div>
+          
+          <div class="card_title">
+              Áo 2 Dây Dáng Dài Phong Cách HÀN QUỐC
+          </div>
+          
+          <div class="card_price"> 590.000VND</div>
+          
+          <!-- <div class="card_size"> 
+              
+              <h5>size</h5>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              
+          </div>
+          
+          <div class="card_color">
+          
+              <h5>color</h5>
+              
+              <span class="card_color_green"></span>
+              
+              <span class="card_color_red"></span>
+              
+              <span class="card_color_yellow"></span>
+          
+          </div> -->
+          
+          <div class="card_action">
+          
+              <button>MUA HÀNG</button>
+              
+              <!-- <button>THÊM GIỎ HÀNG</button> -->
+          
+          </div>
+          
+        </div>  
+  
+        <div class="card-item ">
+          <div class="card_heart">
+              <i class="bx bx-heart"></i>
+          </div>
+      
+          <div class="card_cart">
+              <i class="bx bx-cart-download"></i>
+          </div>
+          
+          <div class="card_img mx-auto">
+              <img width="100%" src="../img/sanpham/2dayloan1.jpeg" alt="">
+          </div>
+          
+          <div class="card_title">
+              Đầm 2 Dây Loang Màu Sành Điệu
+          </div>
+          
+          <div class="card_price"> 429.000VND</div>
+          
+          <!-- <div class="card_size"> 
+              
+              <h5>size</h5>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              
+          </div>
+          
+          <div class="card_color">
+          
+              <h5>color</h5>
+              
+              <span class="card_color_green"></span>
+              
+              <span class="card_color_red"></span>
+              
+              <span class="card_color_yellow"></span>
+          
+          </div> -->
+          
+          <div class="card_action">
+          
+              <button>MUA HÀNG</button>
+              
+              <!-- <button>THÊM GIỎ HÀNG</button> -->
+          
+          </div>
+          
+        </div>  
+  
+        <div class="card-item ">
+          <div class="card_heart">
+              <i class="bx bx-heart"></i>
+          </div>
+      
+          <div class="card_cart">
+              <i class="bx bx-cart-download"></i>
+          </div>
+          
+          <div class="card_img mx-auto">
+              <img width="100%" src="../img/sanpham/damtrang1.jpeg" alt="">
+          </div>
+          
+          <div class="card_title">
+              Đầm Trắng 2 Dây Sang Trọng Quý Phái
+          </div>
+          
+          <div class="card_price"> 439.000VND</div>
+          
+          <!-- <div class="card_size"> 
+              
+              <h5>size</h5>
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              
+          </div>
+          
+          <div class="card_color">
+          
+              <h5>color</h5>
+              
+              <span class="card_color_green"></span>
+              
+              <span class="card_color_red"></span>
+              
+              <span class="card_color_yellow"></span>
+          
+          </div> -->
+          
+          <div class="card_action">
+          
+              <button>MUA HÀNG </button>
+              
+              <!-- <button>THÊM GIỎ HÀNG</button> -->
+          
+          </div>
+          
+        </div> 
+
+
+    
+  
+    </section>
+  
+    <footer class="mt-5 py-5" >
+      <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img class="img-logo" src="../img/logo.png" alt="">
+          <p class="pt-3">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+  
+      </div>
+  
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2" >Featured</h5>
+          <ul class="text-uppercase list-unstyled">
+          <li><a href="#">T-Shirt</a></li>
+          <li><a href="#">Jean</a></li>
+          <li><a href="#">Vest</a></li>
+          <li><a href="#">Clothes</a></li>
+          </ul>
+      </div>
+  
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2" >Contact Us</h5>
+          <div>
+          <h6 class="text-uppercase text-info">ĐỊA CHỈ LIÊN HỆ:</h6>
+          <p>12 Nguyễn Văn Bảo, P.4, Q. Gò Vấp, TP.HCM </p>
+          </div>
+  
+          <div>
+          <h6 class="text-uppercase text-info">Điện thoại:</h6>
+          <p>(028) 38940390</p>
+          </div>
+  
+          <div>
+          <h6 class="text-uppercase text-info">Email:</h6>
+          <p>KaLfashion2@gmail.com</p>
+          </div>
+      </div>
+      </div>
+    </footer> 
+  
+  </body>
+
+</html>
