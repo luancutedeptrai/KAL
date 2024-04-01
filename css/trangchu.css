@@ -41,7 +41,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  box-shadow: rgba(235, 240, 237, 0.35) 0 -25px 18px -14px inset,rgba(0, 0, 0, 0.25) 0 1px 2px,rgba(0, 0, 0, 0.25) 0 2px 4px,rgba(0, 0, 0, 0.25) 0 4px 8px,rgba(0, 0, 0, 0.25) 0 8px 16px,rgba(0, 0, 0, 0.25) 0 16px 32px;
+  /* box-shadow: rgba(235, 240, 237, 0.35) 0 -25px 18px -14px inset,rgba(0, 0, 0, 0.25) 0 1px 2px,rgba(0, 0, 0, 0.25) 0 2px 4px,rgba(0, 0, 0, 0.25) 0 4px 8px,rgba(0, 0, 0, 0.25) 0 8px 16px,rgba(0, 0, 0, 0.25) 0 16px 32px; */
 
 }
 .banner-img .content {
@@ -57,13 +57,19 @@
 }
 
 
+.banner-img .button-29 a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .banner-img .button-29 {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background: white;
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  /* box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset; */
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -92,11 +98,11 @@
 }
 
 .banner-img .button-29:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: #3c4fe0 0 0 0 1.5px inset;
 }
 
 .banner-img .button-29:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px;
   transform: translateY(-2px);
 }
 
@@ -105,12 +111,12 @@
   transform: translateY(2px);
 }
 
-#brand .img-fluid {
+.img-fluid {
   transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển động mượt mà */
   margin-top: 50px;
 }
 
-#brand .img-fluid:hover {
+.img-fluid:hover {
   transform: scale(1.1); /* Phóng to hình ảnh khi di chuột vào */
 }
 
@@ -188,4 +194,29 @@
   font-weight: 900;
   text-align: center;
   margin-top: 24px;
+}
+
+.product-select{
+  /* width: 80px; */
+  /* height: 100px; */
+  padding: 20px;
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  right: -30; 
+  z-index: 10;
+  background-color: #ffffffb4;
+  display: none;
+}
+
+.product-select ul{
+  list-style: none;
+}
+
+.product-select ul li a{
+text-decoration: none;
+color: #000;
+}
+.nav-item:hover .product-select{
+  display: block;
 }
