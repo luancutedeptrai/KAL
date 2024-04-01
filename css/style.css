@@ -13,20 +13,29 @@
     height: 70px ;
     z-index: 1000; /* Đảm bảo nó hiển thị trên mọi phần khác của trang */
     top: 0; /* Đặt navbar ở phía trên cùng */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng viền nổi lên */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); Tạo hiệu ứng viền nổi lên */
     transition: all 0.4s ease-in-out;
-    font-weight: 650;
+    font-weight: 500;
     font-size: 18px;
     text-transform: uppercase;
     background-color: #fff;
 }
 
+.navbar-nav>.nav-link:first-child{
+    position: absolute;
+    right: 85px;
+}
+
+.navbar-nav{
+    justify-content: center;
+}
 #header.sticky{
     /* background-color: #ffffffcf;
     opacity: 0.9; */
     color: #333;
     height: 65px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+
 }
 
 .navbar ul li{
@@ -82,7 +91,7 @@ body::-webkit-scrollbar{
     width: 10px ;    
 }
 body::-webkit-scrollbar-thumb{
-    background-image: linear-gradient(to right bottom,#ffa400,#00aefd);
+    background: #333;
     border-radius: 100rem;
 }
 body::-webkit-scrollbar-track{
